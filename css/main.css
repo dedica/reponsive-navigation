@@ -1,4 +1,5 @@
 body {
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     font-size: 0.667rem;
@@ -16,6 +17,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
+    font-family: 'Droid Serif', serif;
     text-align: center;
 }
 
@@ -150,7 +152,8 @@ footer .bg-footer {
     
     header .bg-masthead {
         display: block;
-        background-color: #666;
+        border-top: 10px solid cornflowerblue;
+        background-color: royalblue;
         background-image: url(../img/fashion.png);
         background-blend-mode: multiply;
         background-repeat: no-repeat;
