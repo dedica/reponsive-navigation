@@ -1,0 +1,286 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 0.667rem;
+    line-height: 1.5;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
+
+.content {
+    max-width: 100rem;
+    margin: 0 1rem;
+    padding: 1rem 0;
+}
+
+header {
+    font-size: 1rem;   
+    background-color: #444; 
+}
+
+
+header .bg-masthead {
+    display: none;
+}
+
+header .bg-masthead .content h1 {
+    margin: 0;
+}
+
+header nav {
+    clear: both;
+    visibility: hidden; 
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: 400ms all ease-out; 
+}
+
+header .bg-nav .content {
+    margin: 0 1rem;
+    padding: 1rem 0;
+}
+
+header p {
+    float: left;
+    margin: 0;
+    padding: 0.5rem 0 ;
+    color: #DDD;
+}
+
+header label {
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    background-color: #fff;
+    float: right;
+}
+
+header [type="checkbox"] {
+    display: none;
+}
+
+header [type="checkbox"]:checked + nav {
+    visibility: visible;
+    opacity: 1;
+    max-height: 500px;
+    padding: 1rem 0 0 0;
+}
+
+
+
+/* NAV */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 1rem;
+    background-color: #CCC;
+    margin: 0 0 1px 0;
+    color: #444;
+    transition: 200ms all ease-in;
+}
+
+nav ul li:first-child a {
+    border-top-left-radius: 10px;
+}
+
+nav ul li:last-child a {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #EEE;
+    color: #666;
+}
+
+main .bg-main .content article h2 {
+    margin: 0 0 1rem 0;
+} 
+
+main img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 1rem 0.5rem 0;
+}
+
+main .bg-main {
+    background-color: floralwhite;
+}
+
+footer {
+    text-align: center;
+}
+
+footer .bg-footer {
+    background-color: #444;
+    color: #CCC;
+}
+
+
+
+@media all and (min-width: 35rem) {
+    
+    body {
+        font-size: 1rem;
+    }
+    
+    header .bg-masthead {
+        display: block;
+        background-color: #666;
+        background-image: url(../img/fashion.png);
+        background-blend-mode: multiply;
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+        padding: 8rem 0;
+    }
+    
+    header .bg-masthead .content,
+    header .bg-nav .content,
+    main .bg-main .content,
+    footer .bg-footer .content {
+        margin: 0 2rem;
+        padding: 2rem 0;
+    }
+    
+    header .bg-masthead .content h1 {
+        color: #FFF;
+        margin: 0;
+        padding: 0;
+        font-size: 4rem;
+    }
+
+    header p {
+        display: none;
+    }
+    
+    .bg-nav .content > label,
+    .bg-nav .content > label + input {
+        display: none;
+    }
+
+    
+    
+      
+    /* NAV */
+    header #nav {
+        visibility: visible;
+        opacity: 1;
+        max-height: 500px;
+        padding: 0;
+    }
+    
+    nav ul li a {
+        width: calc(33.33% - 1rem + 0.33rem);
+        border-bottom: 10px solid cornflowerblue;
+        margin: 0 1rem 0 0;
+        float: left;
+    }
+    
+    nav ul li:first-child a {
+        border-top-left-radius: 0;
+    }
+
+    nav ul li:last-child a {
+        margin: 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-bottom: 10px solid cornflowerblue;
+    }
+    
+    nav ul li a:hover {
+        border-bottom: 10px solid goldenrod;
+    }
+    
+    main img {
+        width: 25%;
+        float: left;
+    }
+}
+
+
+@media all and (min-width: 60rem) {
+    
+    h1, h2, h3, h4, h5, h6 {
+        text-align: left;
+    }
+    
+    body, 
+    header, 
+    main, 
+    footer {
+        font-size: 1.5rem;
+    }
+    
+    header .bg-nav .content {
+        padding: 1.5rem 0;
+    }
+    
+    header p {
+        text-align: left;
+    }
+    
+    header nav ul li a {
+        float: none;
+        display: inline-block;
+        width: auto;
+        padding: 1rem 3rem;
+    }
+    
+    
+    header .bg-masthead .content,
+    header .bg-nav .content,
+    main .bg-main .content,
+    footer .bg-footer .content {
+        margin: 0 3rem;
+        padding: 3rem 0;
+    }
+    
+    header .bg-masthead .content h1 {
+        font-size: 6rem;
+    }
+    
+    main img {
+        width: 30%;
+        margin: 0 2.5rem 1rem 0;
+    }
+    
+    footer {
+        text-align: left;
+    }
+}
+
+
+@media all and (min-width: 106rem) {
+    
+    header .bg-masthead .content,
+    header .bg-nav .content,
+    main .bg-main .content,
+    footer .bg-footer .content {
+        margin: 0 auto;
+    }
+}
