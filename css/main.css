@@ -101,7 +101,7 @@ nav ul li a {
     background-color: #CCC;
     margin: 0 0 1px 0;
     color: #444;
-    transition: 200ms all ease-in;
+    transition: 200ms background-color ease-in, 200ms color ease-in;
 }
 
 nav ul li:first-child a {
