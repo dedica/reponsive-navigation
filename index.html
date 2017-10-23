@@ -3,19 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Responsive Navigation</title>
-    <link href="https://fonts.googleapis.com/css?family=Droid+Serif%7CRoboto" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-    <header class="clearfix">
-        
+    <header>  
         <div class="bg-nav">
             <div class="content clearfix">
                 <p>Fashion</p>
                 <label for="btn">&#9776;</label>
                 <input type="checkbox" id="btn">
-                <nav id="nav" class="clearfix">
-                    <ul>
+                <nav id="nav">
+                    <ul class="clearfix">
                         <li><a href="#">home</a></li>
                         <li><a href="#">about</a></li>
                         <li><a href="#">contact</a></li>
@@ -33,7 +31,11 @@
         <div class="bg-main">
             <div class="content">
                 <article class="clearfix">
-                    <h2>Heading</h2>
+                    <h2>
+                        <span class="mobile">Base Line-height = 16px</span>
+                        <span class="tablet">Base Line-height = 24px</span>
+                        <span class="desktop">Base Line-height = 36px</span>
+                    </h2>
                     <img src="http://placehold.it/400" alt="placeholder">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis quaerat quos quod fuga dolore quisquam, esse deserunt, velit aliquid quidem voluptatum quas libero. Quas quasi, eaque porro libero obcaecati sapiente nam sed qui eos deserunt ipsam officiis alias aliquam dignissimos non ducimus, incidunt, est placeat. Incidunt quaerat rerum commodi nostrum, ipsa tempora rem, officia beatae.</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde vero sint accusamus, harum earum ducimus, repellat eaque odit aliquid consequatur, iusto facilis enim. Ipsum quos illum quaerat molestiae nemo doloribus obcaecati veniam quam laborum cupiditate, cum necessitatibus excepturi aperiam repellendus non asperiores quas esse quae sapiente facere dolores architecto! Blanditiis accusamus sit, magni distinctio ipsum ab omnis cum fugit saepe provident eius ratione veritatis numquam aliquam earum nemo asperiores eligendi atque debitis architecto, repellat. Numquam distinctio commodi dolorum vel repellat tempora, voluptatum necessitatibus, molestiae nam quia ab officiis enim voluptatibus eius. Repellat qui vero, esse ex possimus beatae quisquam reiciendis, dolor alias. Adipisci vero, dolore esse exercitationem optio odio, officia assumenda, fuga placeat eaque eligendi expedita quidem molestiae ad commodi? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis maiores, assumenda, cum quam cupiditate voluptatibus obcaecati reiciendis nesciunt illo doloremque ut amet, aliquam id quos reprehenderit consequatur. Corrupti, perferendis obcaecati a nihil adipisci. Porro nobis repellat esse nam deserunt reiciendis voluptatem impedit unde veniam, consectetur, sint aliquam dignissimos! Sit, doloribus.</p>
@@ -49,5 +51,7 @@
             </div>
         </div>
     </footer>
+    
+    <script src="./js/main.js"></script>
 </body>
 </html>
